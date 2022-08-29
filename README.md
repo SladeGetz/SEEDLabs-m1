@@ -38,3 +38,6 @@ Download and unzip the [Ubuntu 20.04 VM](https://seedsecuritylabs.org/labsetup.h
 ### Backups
 Backup your VM: `./backup.sh`
 Restore a backup: `./backup.sh ./backups/file`
+
+### Machine Configs
+This script will automatically choose the number of cpu cores and memory based on your system, however you may specify your own configs in the `start.sh` file. Memory is in MB, not GB.
