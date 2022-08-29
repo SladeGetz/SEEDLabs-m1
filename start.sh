@@ -1,5 +1,10 @@
 #!/bin/bash
 
+if [[ $( basename "$(pwd)" ) != "SEEDLabs-m1" ]]; then
+  echo "Please enter the SEEDLabs-m1 directory"
+  exit 0
+fi
+
 cpu_count="$(( $(sysctl hw.physicalcpu_max | sed 's/[^0-9]* \([0-9*]\)/\1/') / 2))"
 if [[ $(( cpu_count%2 )) -eq 1 ]]; then
   cpu_count=$((cpu_count - 1))
