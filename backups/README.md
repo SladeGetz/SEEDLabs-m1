@@ -1,1 +1,2 @@
-This folder should hoold all of your .vdi files and backups get saved here.
+This folder should hold all of your `.vdi` files. <dd>
+Backups get saved here.
